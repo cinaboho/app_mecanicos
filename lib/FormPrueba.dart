@@ -16,7 +16,21 @@ class FormPrueba extends StatelessWidget {
           // ),
           //body: MyCustomForm(),
           body: new Stack(
-        children: <Widget>[FormReg(), MyCustomForm()],
+        children: <Widget>[
+          FormReg(),
+          //MyCustomForm()
+          new Container(
+            alignment: Alignment.center,
+            margin: new EdgeInsets.only(top: 70.0),
+            child: new Column(
+              children: <Widget>[
+                MyCustomForm()
+                //button,
+                //TuercaImageAsset()
+              ],
+            ),
+          )
+        ],
       )),
     );
   }
