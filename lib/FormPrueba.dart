@@ -21,7 +21,7 @@ class FormPrueba extends StatelessWidget {
           //MyCustomForm()
           new Container(
             alignment: Alignment.center,
-            margin: new EdgeInsets.only(top: 70.0),
+            margin: new EdgeInsets.only(top: 270.0),
             child: new Column(
               children: <Widget>[
                 MyCustomForm()
@@ -63,10 +63,46 @@ class MyCustomFormState extends State<MyCustomForm> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           TextFormField(
-            decoration: InputDecoration(labelText: 'Enter your username'),
+            decoration: InputDecoration(labelText: 'Igresa tu nombre'),
             validator: (value) {
               if (value.isEmpty) {
-                return 'Please enter some text';
+                return 'Porfavor ingresa tu nombre';
+              }
+              return null;
+            },
+          ),
+          TextFormField(
+            decoration: InputDecoration(labelText: 'Igresa tu apellido'),
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Porfavor ingresa tu apellido';
+              }
+              return null;
+            },
+          ),
+          TextFormField(
+            decoration: InputDecoration(labelText: 'Igresa tu teléfono'),
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Porfavor ingresa tu teléfono';
+              }
+              return null;
+            },
+          ),
+          TextFormField(
+            decoration: InputDecoration(labelText: 'Igresa tu correo'),
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Porfavor ingresa tu correo';
+              }
+              return null;
+            },
+          ),
+          TextFormField(
+            decoration: InputDecoration(labelText: 'Igresa tu contraseña'),
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Porfavor ingresa tu contraseña';
               }
               return null;
             },
@@ -83,7 +119,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                       .showSnackBar(SnackBar(content: Text('Processing Data')));
                 }
               },
-              child: Text('Submit'),
+              child: Text('Crear Cuenta'),
             ),
           ),
         ],
