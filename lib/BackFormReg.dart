@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
-import 'package:app_mecanicos/FormPrueba.dart';
+import 'package:app_mecanicos/FormRegP.dart';
 
-class FormReg extends StatelessWidget {
+class BackFormReg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Stack(

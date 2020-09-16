@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:app_mecanicos/FormReg.dart';
+import 'package:app_mecanicos/BackFormReg.dart';
 
-void main() => runApp(FormPrueba());
+void main() => runApp(FormRegP());
 
-class FormPrueba extends StatelessWidget {
+class FormRegP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //final appTitle = 'Form Validation Demo';
@@ -17,11 +17,11 @@ class FormPrueba extends StatelessWidget {
           //body: MyCustomForm(),
           body: new Stack(
         children: <Widget>[
-          FormReg(),
+          BackFormReg(),
           //MyCustomForm()
           new Container(
             alignment: Alignment.center,
-            margin: new EdgeInsets.only(top: 270.0),
+            margin: new EdgeInsets.only(top: 220.0),
             child: new Column(
               children: <Widget>[
                 MyCustomForm()
@@ -94,6 +94,15 @@ class MyCustomFormState extends State<MyCustomForm> {
             validator: (value) {
               if (value.isEmpty) {
                 return 'Porfavor ingresa tu correo';
+              }
+              return null;
+            },
+          ),
+          TextFormField(
+            decoration: InputDecoration(labelText: 'Igresa tu username'),
+            validator: (value) {
+              if (value.isEmpty) {
+                return 'Porfavor ingresa tu username';
               }
               return null;
             },

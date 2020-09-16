@@ -1,8 +1,12 @@
-import 'package:app_mecanicos/FormPrueba.dart';
-import 'package:app_mecanicos/FormReg.dart';
+import 'package:app_mecanicos/FormRegP.dart';
+import 'package:app_mecanicos/BackFormReg.dart';
 import 'package:flutter/material.dart';
 import 'Welcome.dart';
 import 'Header.dart';
+import 'FormLog.dart';
+import 'FormRegP.dart';
+import 'BackFormReg.dart';
+import 'MenuHome.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,8 +36,9 @@ class MyApp extends StatelessWidget {
       ),
       //home: new Header(), //Pantalla 1 usa "Welcome.dart y Header.dart"
       //home: new FormLog(), //Pantalla 2 incompleta
-      //home: new FormReg(), //Pantalla 3 sin formulario
-      home: new FormPrueba(),
+      //home: new FormReg(), //Pantalla 3 solo la parte de atras
+      home: new FormRegP(), //Pantalla 3 utiliza FormReg(), está completa
+      //home: new MenuHome(), Pantalla 4
     );
   }
 }

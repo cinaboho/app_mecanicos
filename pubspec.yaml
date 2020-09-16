@@ -48,6 +48,9 @@ flutter:
   assets:
      - images/tuerca.png
      - images/logocamara.png
+     - images/logomNaranja.png
+     - images/personalmecanico.png
+     - images/repuestosyaccesorios.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
