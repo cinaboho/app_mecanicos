@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
 
-class Home extends StatelessWidget {
+class MenuHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Stack(
@@ -55,6 +55,34 @@ class LogomNaranjaImageAsset extends StatelessWidget {
     return Container(
       child: image,
       width: 600.0,
+      height: 160.0,
+    );
+  }
+}
+
+class PersonalMecanicooImageAsset extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    AssetImage assetImage = AssetImage('images/personalmecanico.png');
+    Image image = Image(image: assetImage);
+
+    return Container(
+      child: image,
+      width: 600.0,
+      height: 160.0,
+    );
+  }
+}
+
+class RepuestosyAccesoriosImageAsset extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    AssetImage assetImage = AssetImage('images/repuestosyaccesorios.png');
+    Image image = Image(image: assetImage);
+    return Container(
+      child: image,
+      width: 600.0,
+      //height: 160.0,
       height: 160.0,
     );
   }

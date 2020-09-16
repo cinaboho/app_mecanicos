@@ -1,5 +1,6 @@
 import 'package:app_mecanicos/FormRegP.dart';
 import 'package:app_mecanicos/BackFormReg.dart';
+import 'package:app_mecanicos/PersonalMecanico.dart';
 import 'package:flutter/material.dart';
 import 'Welcome.dart';
 import 'Header.dart';
@@ -37,8 +38,8 @@ class MyApp extends StatelessWidget {
       //home: new Header(), //Pantalla 1 usa "Welcome.dart y Header.dart"
       //home: new FormLog(), //Pantalla 2 incompleta
       //home: new FormReg(), //Pantalla 3 solo la parte de atras
-      home: new FormRegP(), //Pantalla 3 utiliza FormReg(), está completa
-      //home: new MenuHome(), Pantalla 4
+      //home: new FormRegP(), //Pantalla 3 utiliza FormReg(), está completa
+      home: new MenuHome(), //Pantalla 4
     );
   }
 }
